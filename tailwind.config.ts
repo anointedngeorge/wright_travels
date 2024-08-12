@@ -19,6 +19,7 @@ const config: Config = {
       'main-white':'#ffffff',
       'main-yellow':'#D7BF1C',
       'main-black':'#000000',
+      'main-brown':'#472D2C',
     }
   },
   plugins: [

@@ -13,7 +13,7 @@ interface contentInterface {
 
 const Topnavcontent = ({icon:Icon, title}:contentInterface) => {
   return (
-    <div className="flex flex-row space-x-2 uppercase">
+    <div className="flex flex-row space-x-2">
       <div><p>{<Icon />}</p></div>
       <div><p>{title}</p></div>
   </div>
@@ -29,7 +29,7 @@ const Topnav = () => {
     <div className='w-full p-4 bg-gradient-to-r text-neutral-100 from-main-red to-main-green' >
         <div className="grid grid-flow-col leading-3">
             <div>
-                <Topnavcontent icon={FaLocationDot} title='no 28 owerri road behind ABC transport, enugu.' />
+                <Topnavcontent icon={FaLocationDot} title='No 28 owerri road behind ABC transport, enugu.' />
             </div>
             <div className='text-left'><Topnavcontent icon={MdOutlineEmail} title='support@gmail.com' /></div>
             <div className='text-left'><Topnavcontent icon={FaPhone} title='+234(0)80-453-234-54' /></div>

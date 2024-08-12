@@ -58,18 +58,18 @@ const Hero = () => {
 
 
         {/* title */}
-        <div className="w-full flex flex-col items-center mt-44  h-auto  absolute">
+        <div className="w-full flex flex-col items-center mt-40  h-auto  absolute bg-main-black bg-opacity-20 p-16">
             <div>
-                <h3 className='font-pop text-4xl font-semibold underline text-main-white tracking-widest uppercase'>Let's Start Booking</h3>
+                <h3 className='font-memo text-5xl font-bold  text-main-white tracking-widest uppercase'>Let's Start Booking</h3>
             </div>
             <div className='mt-2'>
-                <h3 className='font-pop text-2xl font-semibold underline text-main-yellow tracking-widest'>
+                <h3 className='font-pop text-2xl font-normal text-base-300 tracking-widest'>
                     Business Trips, Vacations &amp; Lots More !
                 </h3>
             </div>
 
             <div className='w-2/4 text-center mt-3'>
-                <p className='font-semibold text-main-white'>
+                <p className='font-semibold text-main-white text-center'>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, quidem maiores? Recusandae, 
                     perferendis! Dolorum quae nemo quasi, eligendi quaerat
                 </p>
@@ -78,7 +78,7 @@ const Hero = () => {
 
             {/* sliders */}
 
-            <div className="w-full mt-10 mb-2 flex flex-flow-col space-x-10 overflow-hidden">
+            {/* <div className="w-full mt-10 mb-2 flex flex-flow-col space-x-10 overflow-hidden">
                <Sliders items={[
                     {title:'America', image_path:'../images/e4.jpg', classname:class_values },
                     {title:'South Africa', image_path:'../images/e5.jpg', classname:class_values },
@@ -87,9 +87,9 @@ const Hero = () => {
                     {title:'Israel', image_path:'../images/e11.jpg', classname:class_values }
                ]} />
                
-            </div>
+            </div> */}
             {/* small dots */}
-            <SmallDots />
+            {/* <SmallDots /> */}
             {/* small dots */}
             {/* end of sliders */}
         </div>
