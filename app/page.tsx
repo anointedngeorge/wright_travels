@@ -6,11 +6,12 @@ import About from "./components/About";
 import WhyChooseUs from "./components/WhyChooseUs";
 import VideoSection from "./components/VideoSection";
 import Services from "./components/Services";
-import Testimonials from "./components/Testimonials";
+
 import NewsLetter from "./components/NewsLetter";
 import Footer from "./components/Footer";
-import Slider from "./components/Slider";
-import Slider2 from "./components/Slider2";
+import Testimonials from "./components/Testimonials";
+// import Slider from "./components/Slider";
+
 
 export default function Home() {
   return (

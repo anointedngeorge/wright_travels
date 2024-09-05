@@ -1,9 +1,8 @@
 "use client"
 
 import React from 'react'
-// import Splide, SplideSlide  from '@splidejs/react-splide';
-import Splide from '@splidejs/react-splide';
-import SplideSlide from '@splidejs/react-splide';
+// import {Splide, SplideSlide}  from '@splidejs/react-splide';
+import {Splide, SplideSlide} from '@splidejs/react-splide';;
 
 import "../slider.globals.css";
 import Image from 'next/image';

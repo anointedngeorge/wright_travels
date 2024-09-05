@@ -1,7 +1,8 @@
 "use client"
 import Image from 'next/image';
 import React from 'react'
-import { Splide, SplideSlide } from '@splidejs/react-splide';
+import {Splide, SplideSlide} from '@splidejs/react-splide';
+
 import "../slider.globals.css";
 
 interface slider_items {
@@ -11,7 +12,7 @@ interface slider_items {
 }
 
 
-export const Sliders:React.FC<slider_items> = ({content, name, image}) => {
+const Sliders:React.FC<slider_items> = ({content, name, image}) => {
     return (
         <div className="h-full bg-main-brown rounded-lg">
                 
