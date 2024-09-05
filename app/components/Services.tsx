@@ -45,12 +45,12 @@ const Card = ({item}:{item:any}) => {
    
     
   return (
-    <div className='w-2/4 h-96 overflow-hidden'>
+    <div className='w-2/4 h-96 max-sm:w-full max-sm:mt-10 overflow-hidden'>
         <div className="w-full h-56 relative">
             <Image src={`${item['image']}`} alt='...' fill={true} />
         </div>
-        <h3 className='font-pop font-semibold text-2xl text-center mt-3'>{item['title']}</h3>
-        <p className='p-4 text-center'>
+        <h3 className='font-pop font-semibold text-2xl max-sm:text-lg text-center mt-3'>{item['title']}</h3>
+        <p className='p-4 max-sm:p-2 text-center max-sm:text-left'>
             {item['content']}
         </p>
     </div>
@@ -63,7 +63,7 @@ const Card = ({item}:{item:any}) => {
 const ServicesItems = ({data}:{data:content[]}) => {
 
   return (
-    <div className="flex mt-5 mb-5 space-x-2">
+    <div className="flex max-sm:flex-col mt-5 mb-5 space-x-2 max-sm:space-x-0">
         {data.map((item, index) => (            
             <Card key={index} item={item}  />
         ))}
@@ -76,10 +76,10 @@ const ServicesItems = ({data}:{data:content[]}) => {
 
 const Services = () => {
   return (
-    <div className='w-full p-20 mt-3'>
+    <div className='w-full p-20 max-sm:p-3 mt-3'>
         <div className='text-center'>
             <p className='font-pop text-main-yellow font-semibold'>Wright Travels &amp; Tours</p>
-            <h3 className='text-4xl font-pop font-semibold bg-gradient-to-tr from-main-red to-main-green text-transparent bg-clip-text'>Our Services</h3>
+            <h3 className='text-4xl max-sm:text-2xl font-pop font-semibold bg-gradient-to-tr from-main-red to-main-green text-transparent bg-clip-text'>Our Services</h3>
         </div>
         <div className="mt-10 mb-2"></div>
         

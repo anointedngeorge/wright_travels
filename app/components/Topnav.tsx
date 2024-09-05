@@ -26,9 +26,9 @@ const Topnavcontent = ({icon:Icon, title}:contentInterface) => {
 
 const Topnav = () => {
   return (
-    <div className='w-full p-4 bg-gradient-to-r text-neutral-100 from-main-red to-main-green' >
-        <div className="grid grid-flow-col leading-3">
-            <div>
+    <div className='w-full p-4 bg-gradient-to-r text-neutral-100 from-main-red to-main-green' id='#top'>
+        <div className="grid grid-flow-col max-sm:grid-flow-row leading-3 max-sm:space-y-4">
+            <div className='max-sm:break-before-avoid-page'>
                 <Topnavcontent icon={FaLocationDot} title='No 28 owerri road behind ABC transport, enugu.' />
             </div>
             <div className='text-left'><Topnavcontent icon={MdOutlineEmail} title='support@gmail.com' /></div>

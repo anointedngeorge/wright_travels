@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@import '@splidejs/react-splide/css';
+
+/* @import '@splidejs/react-splide/css/skyblue'; */
+@import '@splidejs/react-splide/css/sea-green';
+
+/* @import '@splidejs/react-splide/css/core'; */
+
+.splide__arrows_overide {
+  background-color: red;
+  
+}
+
+
+
+

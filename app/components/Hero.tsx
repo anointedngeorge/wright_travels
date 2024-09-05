@@ -60,15 +60,15 @@ const Hero = () => {
         {/* title */}
         <div className="w-full flex flex-col items-center mt-40  h-auto  absolute bg-main-black bg-opacity-20 p-16">
             <div>
-                <h3 className='font-memo text-5xl font-bold  text-main-white tracking-widest uppercase'>Let's Start Booking</h3>
+                <h3 className='font-memo text-5xl max-sm:text-3xl font-bold  text-main-white tracking-widest uppercase'>Let&apos;s Start Booking</h3>
             </div>
             <div className='mt-2'>
-                <h3 className='font-pop text-2xl font-normal text-base-300 tracking-widest'>
+                <h3 className='font-pop text-2xl max-sm:text-xl font-normal text-base-300 tracking-widest'>
                     Business Trips, Vacations &amp; Lots More !
                 </h3>
             </div>
 
-            <div className='w-2/4 text-center mt-3'>
+            <div className='w-2/4 max-sm:w-full text-center mt-3'>
                 <p className='font-semibold text-main-white text-center'>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, quidem maiores? Recusandae, 
                     perferendis! Dolorum quae nemo quasi, eligendi quaerat

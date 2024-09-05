@@ -71,9 +71,11 @@ const Footer = () => {
         {/*  */}
 
         <div className="flex inset-x-10 top-3/4 mt-20 place-content-end fixed text-center">
+            <Link href={'#top'}>
             <div className='w-16 h-16 bg-main-yellow rounded-full content-center cursor-pointer text-main-black drop-shadow-2xl'>
                 <RiArrowUpSLine className='w-full h-full ' />
             </div>
+            </Link>
         </div>
     </div>
   )

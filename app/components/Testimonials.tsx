@@ -1,26 +1,34 @@
+"use client"
 import Image from 'next/image';
 import React from 'react'
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import "../slider.globals.css";
+
+interface slider_items {
+    content:string,
+    name:string,
+    image:string
+}
 
 
-export const Sliders = () => {
+export const Sliders:React.FC<slider_items> = ({content, name, image}) => {
     return (
-        <div className="w-2/3 h-full bg-main-brown rounded-lg">
+        <div className="h-full bg-main-brown rounded-lg">
                 
-              <div className="flex space-x-2">
-                <div className='w-2/3 h-auto relative'>
+              <div className="flex space-x-2 max-sm:space-x-0">
+                <div className='w-2/3 h-96 relative'>
                         <Image
-                            src="/./images/e15.jpg"
+                            src={image}
                             alt="Person"
                             fill={true}
                             className="object-cover w-full h-full"
                         />
                 </div>
-                <div className='text-center py-20'>
+                <div className='w-10/12 max-sm:text-sm text-center py-20 max-sm:py-5'>
                         <p className="mb-4 text-main-white">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Repudiandae, quidem.
+                        {content}
                     </p>
-                    <h3 className="font-semibold font-pop text-main-yellow">Ronald Richards</h3>
+                    <h3 className="font-semibold font-pop text-main-yellow">{name}</h3>
                 </div>
               </div>
             </div>
@@ -30,75 +38,52 @@ export const Sliders = () => {
 
 
 const Testimonials = () => {
+  
+    const content:slider_items[] = [
+        {
+          name:'Ronald Doph', 
+          content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, deserunt animi. Velit iste quas minima molestiae atque? Sapiente sequi molestias porro sed reprehenderit.", 
+          image:'/./images/e6.jpg'
+        },
+
+        {
+          name:'Mikel Tyson', 
+          content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, deserunt animi. Velit iste quas minima molestiae atque? Sapiente sequi molestias porro sed reprehenderit.", 
+          image:'/./images/e5.jpg'
+        },
+        {
+          name:'Ambrose Edit', 
+          content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, deserunt animi. Velit iste quas minima molestiae atque? Sapiente sequi molestias porro sed reprehenderit.", 
+          image:'/./images/e4.jpg'
+        },
+    ]
     return (
-      <div className="w-full py-16 bg-main relative mb-16 bg-main-red">
+      <div className="w-full py-16  bg-main relative mb-16 max-sm:mb-2 bg-main-red">
         <div className='text-center mb-10'>
-            <h3 className='text-4xl font-pop font-semibold text-main-white'>What People Say About Us</h3>
+            <h3 className='text-4xl max-sm:text-2xl font-pop font-semibold text-main-white'>What People Say About Us</h3>
         </div>
         {/* Container for the carousel or content */}
         <div className="relative w-full max-w-5xl mx-auto overflow-hidden">
-          <div className="absolute inset-y-0 left-0 flex items-center">
-            {/* Left Arrow */}
-            <div className="w-10 h-10 bg-main-yellow rounded-full">
-                <button className="text-main-black text-center">
-                <svg
-                    className="h-full w-full"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M15 19l-7-7 7-7"
-                    ></path>
-                </svg>
-                </button>
-            </div>
-          </div>
-  
-          <div className="flex items-center justify-center space-x-4">
-            {/* Testimonial Content */}
-            <div className="w-1/4 h-56 bg-main-green">
-              <img
-                src="https://via.placeholder.com/150"
-                alt="Person"
-                className="object-cover w-full h-full rounded-lg"
-              />
-            </div>
-            <Sliders />
-            <div className="w-1/4 h-56 bg-main-green">
-              <img
-                src="https://via.placeholder.com/150"
-                alt="Person"
-                className="object-cover w-full h-full rounded-lg"
-              />
-            </div>
-          </div>
-  
-          <div className="absolute inset-y-9  right-0 flex items-center">
-            {/* Right Arrow */}
-            <div className="w-10 h-10 bg-main-yellow rounded-full">
-            <button>
-              <svg
-                className="h-full w-full"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M9 5l7 7-7 7"
-                ></path>
-              </svg>
-            </button>
-            </div>
-          </div>
+
+        <Splide aria-label="My Favorite Images" options={{
+                type   : 'loop',
+                padding: '25%',
+                gap:'15px',
+                cover:true,
+                height:'300px',
+                classes: {
+                  arrow : 'splide__arrow rounded-full bg-main-yellow p-3',
+                  page : 'splide__pagination__page bg-main-yellow text-main-black',
+                }
+            }}>
+                  {/*  */}
+                  {content.map((item, index) => (
+                      <SplideSlide key={index}>
+                        <Sliders content={item.content} image={item.image} name={item.name} />
+                      </SplideSlide >
+                  ))}
+            </Splide>
+
         </div>
       </div>
     );

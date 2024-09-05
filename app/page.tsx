@@ -9,6 +9,8 @@ import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import NewsLetter from "./components/NewsLetter";
 import Footer from "./components/Footer";
+import Slider from "./components/Slider";
+import Slider2 from "./components/Slider2";
 
 export default function Home() {
   return (
@@ -23,6 +25,7 @@ export default function Home() {
         <Testimonials />
         <NewsLetter />
         <Footer />
+
     </main>
   );
 }
