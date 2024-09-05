@@ -5,9 +5,6 @@ import { EmblaOptionsType } from 'embla-carousel'
 
 import React from 'react'
 
-
-
-
 const OPTIONS: EmblaOptionsType = { loop: true }
 const SLIDE_COUNT = 3
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
