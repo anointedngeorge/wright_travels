@@ -6,7 +6,7 @@ interface  contentdata {title:string, image:string, description?:string}
 
 const Chooseus = ({title, image, description}: contentdata) => {
   return (
-    <div className='flex max-sm:flex-grow-0 mt-4 mb-4 shadow-sm drop-shadow-lg shadow-main-white p-3 bg-main-white bg-opacity-20 rounded-full'>
+    <div className='flex max-sm:flex-grow-0 place-content-center items-center mt-4 mb-4 shadow-sm drop-shadow-lg shadow-main-white p-3 bg-main-white bg-opacity-20 rounded-full'>
         <div className='max-sm:place-content-center max-md:place-content-center'>
             <div title={title} className='w-32 h-32 max-sm:w-20 max-sm:h-20 max-md:w-20 max-md:h-20 rounded-full relative' style={{
                 background:`url(${image})`,
@@ -34,19 +34,19 @@ const WhyChooseUs = () => {
         {
             title:"We Are Honest & Dependable", 
             image:'/./images/e3.jpg', 
-            description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Error asperiores cum ullam esse, optio hic aspernatur ex quasi dignissimos repudiandae ipsum fuga, quae magni explicabo laborum minus eligendi sunt! Sed."
+            description:"At Wright Travel, integrity is at the core of everything we do. We believe in being transparent and providing reliable services to our clients. You can trust us to handle your travel plans with utmost care, ensuring that your experience is smooth and worry-free from start to finish. Our dedication to honesty ensures that we deliver exactly what we promise, fostering long-term relationships with our clients."
         },
 
         {
             title:"We Are Always Improving", 
             image:'/./images/e2.jpg', 
-            description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Error asperiores cum ullam esse, optio hic aspernatur ex quasi dignissimos repudiandae ipsum fuga, quae magni explicabo laborum minus eligendi sunt! Sed."
+            description:"In a rapidly evolving travel industry, staying ahead is essential. At Wright Travel, we continuously seek innovative ways to improve our services and operations. Whether it’s through adopting new technologies or expanding our destination offerings, we are committed to refining our processes to better serve our clients. Your satisfaction is our top priority, and we believe that constant improvement is key to delivering exceptional travel experiences."
         }, 
 
         {
             title:"We Are Passionate", 
             image:'/./images/e4.jpg', 
-            description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Error asperiores cum ullam esse, optio hic aspernatur ex quasi dignissimos repudiandae ipsum fuga, quae magni explicabo laborum minus eligendi sunt! Sed."
+            description:"Travel is more than just a service for us—it’s our passion. At Wright Travel, we are passionate about exploring the world and helping others do the same. Our love for travel drives us to create unique, memorable experiences for every client. We go the extra mile to ensure that every trip we plan reflects our enthusiasm, attention to detail, and desire to make your journey unforgettable."
         },
 
     ]

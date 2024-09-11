@@ -14,27 +14,35 @@ const data_content:content[][] = [
        [
             {
                 title:'Hotel Reservation', 
-                content:'Lorem ipsum dolor sit amet consectetur. Imperdiet aliquam aliquet molestie pharetra. Fames sit ultrices hendrerit porttitor duis enim nibh.', 
+                content:'With Wright Gateway travel and Tour, you do not need to have any worry on where to stay locally and internationally.  Your accommodation is just away from WhatsApp +2348036140047; +2348024192861', 
                 image:'/./images/e10.jpg'
             },
             {
-                title:'Flight Reservation', 
-                content:'Lorem ipsum dolor sit amet consectetur. Imperdiet aliquam aliquet molestie pharetra. Fames sit ultrices hendrerit porttitor duis enim nibh.', 
+                title:'Flight Ticket', 
+                content:'We are reliable in getting Cheap and affordable flight, irrespective of your destination. WhatsApp +2348036140047; +2348024192861.', 
                 image:'/./images/e12.jpg'
             },
        ],
   
         [
             {
-                title:'Tour Arrangements', 
-                content:'Lorem ipsum dolor sit amet consectetur. Imperdiet aliquam aliquet molestie pharetra. Fames sit ultrices hendrerit porttitor duis enim nibh.', 
+                title:'Tour Package', 
+                content:'Be it Honeymoon, Escorted, Hosted, Independent and Group Tour, we will help you make it your dream come true. WhatsApp +2348036140047; +2348024192861', 
                 image:'/./images/e11.jpg'
             },
             {
-                title:'Visa Advisory', 
-                content:'Lorem ipsum dolor sit amet consectetur. Imperdiet aliquam aliquet molestie pharetra. Fames sit ultrices hendrerit porttitor duis enim nibh.  ', 
+                title:'Visa Assistance', 
+                content:'Are you planning to travel outside the country but don’t know how to start your Visa Process, we are here to assist you in the areas of Visiting/Tourism Visa, Student’s Visa, etc. WhatsApp +2348036140047; +2348024192861 ', 
                 image:'/./images/e13.jpg'
             },
+
+            {
+                title:'Travel Insurance', 
+                content:'Travelling Health Insurance is one of the basic requirements for travelers outside the country. We partner with reputable Insurance Companies to give you topnotch services as expected. WhatsApp +2348036140047; +2348024192861', 
+                image:'/./images/e12.jpg'
+            },
+
+
         ]
     
 ]

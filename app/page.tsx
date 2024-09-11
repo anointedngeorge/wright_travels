@@ -10,6 +10,7 @@ import Services from "./components/Services";
 import NewsLetter from "./components/NewsLetter";
 import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
+import PlacesLocation from "./components/PlacesSlider";
 // import Slider from "./components/Slider";
 
 
@@ -25,6 +26,7 @@ export default function Home() {
         <Services />
         <Testimonials />
         <NewsLetter />
+        {/* <PlacesLocation /> */}
         <Footer />
 
     </main>

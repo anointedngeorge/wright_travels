@@ -32,7 +32,7 @@ const Topnav = () => {
                 <Topnavcontent icon={FaLocationDot} title='No 28 owerri road behind ABC transport, enugu.' />
             </div>
             <div className='text-left'><Topnavcontent icon={MdOutlineEmail} title='support@gmail.com' /></div>
-            <div className='text-left'><Topnavcontent icon={FaPhone} title='+234(0)80-453-234-54' /></div>
+            <div className='text-left'><Topnavcontent icon={FaPhone} title='08036140047;08024192861;08095777839' /></div>
             <div className='text-right '>
               <div className="flex flex-flow-col space-x-7">
                   <div><FaFacebook /> </div>

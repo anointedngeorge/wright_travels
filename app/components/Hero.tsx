@@ -70,8 +70,7 @@ const Hero = () => {
 
             <div className='w-2/4 max-sm:w-full text-center mt-3'>
                 <p className='font-semibold text-main-white text-center'>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, quidem maiores? Recusandae, 
-                    perferendis! Dolorum quae nemo quasi, eligendi quaerat
+                Wright Gateway: Travel with Peace of Mind.
                 </p>
             </div>
 
