@@ -3,7 +3,7 @@ const nextConfig = {
     images: {
       remotePatterns: [
         {hostname: "wrightgatewaytravels.com"},
-        {hostname: "127.0.0.1"},
+        {hostname: "wright-travels.vercel.app"},
       ]  
     },
    
