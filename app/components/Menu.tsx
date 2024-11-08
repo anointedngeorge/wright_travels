@@ -41,7 +41,7 @@ const Menu = () => {
                 <nav className='float-right'>
                     <ul className={`flex flex-row space-x-4 items-center`}>
                         <MenuLinks links={content} />
-                        <li><button className='btn btn-success text-main-white'>Booking</button></li>
+                        <li><Link href={'https://wrightgateway.customer.mytravx.com/order/new/flight'} target='_blank' className='btn btn-success text-main-white'>Booking</Link></li>
                     </ul>
                     
                 </nav>
