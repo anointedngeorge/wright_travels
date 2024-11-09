@@ -58,7 +58,7 @@ const Hero = () => {
 
 
         {/* title */}
-        <div className="w-full flex flex-col items-center mt-40  h-auto  absolute bg-main-black bg-opacity-20 p-16">
+        <div className="w-full text-center flex flex-col items-center mt-40  h-auto  absolute bg-main-black bg-opacity-20 p-16">
             <div>
                 <h3 className='font-memo text-5xl max-sm:text-3xl font-bold  text-main-white tracking-widest uppercase'>Let&apos;s Start Booking</h3>
             </div>
